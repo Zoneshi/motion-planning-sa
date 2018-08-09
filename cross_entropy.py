@@ -242,7 +242,8 @@ def main():
 
     #Get the optimal policy
     policy = get_policy(Num,Init_pos,Tar_Obs)
-
+    
+    np.save('policy_save', policy)
     #plot target and obstacle
     plot_trajectory(policy,Init_pos,Tar_Obs)
 
